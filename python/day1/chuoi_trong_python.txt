@@ -1,0 +1,52 @@
+Các ký tự đặt biệt trong chuỗi
+    - Để sử dụng các ký tự đặc biệt trong Python khi in ra dữ liệu thì mọi người sử dụng ký tự \ trước nó.
+    - VD: Khi bạn muốn in ra "  mà bạn lại sử dụng  "" để chứa nội dung int ra chuỗi
+        + print("Website \"Toidicode.com\" ")
+        + #Website "Toidicode.com"
+
+        + print('Website \'Toidicode.com\' ')
+        + #Website 'Toidicode.com'
+    - Các ký tự đặc biệt khác:
+        + \n ngắt xuống dòng và bắt đầu dòng mời.
+        + \t đẩy nội dung phía sau nó cách 1 tab.
+        + \a chuông cảnh báo.
+        + \b xóa bỏ khoảng trắng phía trước nó.
+        + Ngoài ra bạn cũng có thể sử dụng để in ra các ký tự đặc biệt khác bằng việc sử dụng theo cú pháp \xnn, với n là 0->9, hoặc a->f hoặc A->F.
+    - VD: 
+        + print("Website \t Toidicode.com")
+        + #Website          Toidicode.com
+Fomat chuỗi
+    - Ngoài những cách in ra dữ liệu ở trên thì mọi người cũng có thể sử dụng các keyword định dạng cho kiểu giá trị và binding nó vào chuỗi. Sử dụng với cú pháp:
+            print("%type" %(binding))
+        Trong đó:
+            + type là các kiểu dữ liệu các bạn muốn binding và thay thế vào vị trí đó.
+            + binding là giá trị mà các bạn muốn binding vào vị trí được xác định trong chuỗi.
+    - Type là các kiểu sau:
+        %c	        character
+        %s	        chuỗi
+        %i	        số nguyên
+        %d	        số nguyên
+        %u	        số nguyên
+        %o	        bát phân
+        %x	        thập lục phân (in thường)
+        %X	        thập lục phân (in hoa)
+        %e	        số mũ  (với e thường)
+        %E	        số mũ  (với e hoa)
+        %f	        số thực
+        %g	        dạng rút gọn của %f and %e
+        %G	        dạng rút gọn của %f and %E
+    - VD:
+        + guy = "Ban"
+        + full = "Chao mung %s den voi website toidicode.com" %(guy)
+        + print(full)
+        + # Chao mung Ban den voi website toidicode.com
+    - Trong đó nếu như bạn muốn binding nhiều chuỗi vào trong chuỗi thì mỗi giá trị bạn muốn binding cách nhau bởi 1 dấu ,
+
+        + guy = "Ban"
+        + doamin = "toidicode.com"
+        + full = "Chao mung %s den voi website %s" %(guy, doamin)
+        + print(full)
+        + # Chao mung Ban den voi website toidicode.com
+
+Truy cập tới từng giá trị của chuỗi
+    
