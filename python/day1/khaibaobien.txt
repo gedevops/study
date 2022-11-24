@@ -1,9 +1,83 @@
-tenBien = giaTri
-vd: name = "Lê Thành Vũ"
+link Document: https://toidicode.com/khai-bao-bien-trong-python-342.html
 
-Khai báo nhiều biến bằng 1 giá trị
-a = b =c =1996
+Khai báo biến
+    - tenBien = giaTri
+        VD: name = "Lê Thành Vũ"
 
-Khai báo biến với nhiều giá trị tương ứng trên 1 dòng
-name, age, male = "Lê Thành Vũ", 27, True
+    - Khai báo nhiều biến bằng 1 giá trị
+        a = b =c =1996
 
+    - Khai báo biến với nhiều giá trị tương ứng trên 1 dòng
+        name, age, male = "Lê Thành Vũ", 27, True
+
+Các kiểu dữ liệu trong python
+    - Python cũng giống như một số các ngôn ngữ bậc cao khác, khi ta khai báo biến thì kiểu dữ liệu của nó sẽ tự động được detect. Vì vậy nên chúng ta cũng không phải quá vất vả khi khai báo 1 biến.
+        name = "Vũ Thanh Tài"
+        #string
+
+        age = 22
+        #integer
+
+        point = 8.9
+        #float
+
+        option = [1,2,3,4,5]
+        #lists
+
+        tuple = ('Vũ Thanh Tài', 22 , True)
+        #Tuple
+
+        dictionary = {"name": "Vu Thanh Tai", "age": 22, "male": True}
+        #Dictionary
+Kiểm tra kiểu dữ liệu
+    - type(data)  //data là biến cần kiểm tra
+        
+    - VD: 
+        name = "Vũ Thanh Tài"
+        type(name)
+        #string
+
+        age = 22
+        type(age)
+        #int
+
+        point = 8.9
+        type(point)
+        #float
+
+        option = [1,2,3,4,5]
+        type(option)
+        #list
+
+        tuplet = ('Vũ Thanh Tài', 22 , True)
+        type(tuplet)
+        #Tuple
+
+        dictionary = {"name": "Vu Thanh Tai", "age": 22, "male": True}
+        type(dictionary)
+        # dict
+Ép kiểu dữ liệu trong Python
+    - Trong một trường hợp nào đó mà bạn muốn chuyển đổi kiểu dữ liệu của một biến, thì Python cũng hỗ trợ bạn qua các hàm cơ bản sau:
+        + float(data) chuyển đổi sang kiểu số thực.
+        + int(data,base) chuyển đổi sang kiểu số, trong đó base là kiểu hệ số mà các bạn muốn chuyển đổi sang (tham số này có thể bỏ trống).
+        + str(data) chuyển đổi sang dạng chuỗi.
+        + complex(data) chuyển đổi sang kiểu phức hợp.
+        + tuple(data) chuyển đổi sang kiểu Tuple.
+        + dict(data) chuyển đổi sang kiểu Dictionary.
+        + hex(data) chuyển đổi sang hệ 16.
+        + oct(data) chuyển đổi sang hệ 8.
+        + chr(data) chuyển đổi sang dạng ký tự.
+    - VD:
+        age = 22;
+
+        # ép sang float
+        floatAge = float(age)
+        print(type(floatAge))
+
+        #ép sang integer.
+        intAge = int(age)
+        print(type(intAge))
+
+        #ép sang chuỗi.
+        strAge = str(age)
+        print(type(strAge))
