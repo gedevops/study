@@ -2,5 +2,8 @@ tenBien = giaTri
 vd: name = "Lê Thành Vũ"
 
 Khai báo nhiều biến bằng 1 giá trị
-
 a = b =c =1996
+
+Khai báo biến với nhiều giá trị tương ứng trên 1 dòng
+name, age, male = "Lê Thành Vũ", 27, True
+
