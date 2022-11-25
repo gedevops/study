@@ -49,4 +49,31 @@ Fomat chuỗi
         + # Chao mung Ban den voi website toidicode.com
 
 Truy cập tới từng giá trị của chuỗi
-    
+    - Chuỗi trong Python được lưu trữ vào trong các ô nhớ với mỗi ô nhớ tương đương với một ký tự đơn (khác với các ngôn ngữ khác) và các ký tự này được xếp liên tiếp với nhau. Do đó kiểu dữ liệu chuỗi trong Python có thể được truy xuất đến từng ký tự trong nó (các ngôn ngữ khác không có, PHP7.1.X mới hỗ trợ ở đây là reverse index string).
+    - Để truy cập đến từng ký tự bên trong chuỗi, các bạn sử dụng cú pháp sau:
+            + stringName[index]
+        Trong đó: 
+                . stringName là tên của biến chứa chuỗi, hoặc chuỗi.
+                . index là vị trí của ký tự bạn muốn lấy ra. Index này hỗ trợ chúng ta truy xuất được cả 2 chiều của chuỗi nếu:
+                    Tính từ đầu thì nó bắt đầu từ 0
+                    Tính từ cuối thì nó bắt đầu từ -1
+    - VD: 
+        + name = "Vu Thanh Tai"
+        + print(name[0]) # V
+        + print(name[-1]) # i
+    - Nếu trong trường hợp các bạn muốn lấy nội dung của một đoạn chuỗi trong chuỗi đó thì có thể sử dụng cú pháp sau:
+            + stringName[start:end]
+        Trong đó:
+                . stringName là tên của biến chứa chuỗi, hoặc chuỗi.
+                . start là vị trí của ký tự bắt đầu lấy, nếu để trống start thì nó sẽ lấy từ 0.
+                . end là vị trí kết thúc (nó sẽ lấy trong khoảng từ start đến < end), nếu để trống end thì nó sẽ lấy đến hết chuỗi.
+    - VD:
+        + name = "LÊ THÀNH VŨ"
+        + print(name[0:])       # LÊ THÀNH VŨ
+        + print(name [0:2])     # LÊ
+        + print(name[3:8])      # THÀNH
+        + print(name[9:])       # VŨ
+        + print(name[-2:])      # VŨ
+        + print(name[-8:-3])    # THÀNH
+        + print(name[-11:-9])   # LÊ
+        + print(name[-11:])     # LÊ THÀNH VŨ
