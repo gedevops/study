@@ -31,3 +31,5 @@ print(name[-2:])
 print(name[-8:-3])
 print(name[-11:-9])
 print(name[-11:])
+
+
