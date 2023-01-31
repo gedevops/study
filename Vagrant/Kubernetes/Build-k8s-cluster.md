@@ -57,6 +57,14 @@ sudo chown $(id -u):$(id -g) $HOME/.kube/config
 ```
 kubectl apply -f https://docs.projectcalico.org/v3.14/manifests/calico.yaml
 ```
+### Tips
+
+In installation process maybe you will due to error or warning message relate to Swap.
+In some case recommendation is turn off Swap using this command 
+```
+swapoff -a 
+``` 
+
 ### Join the worker nodes to the cluster:
 ```
 sudo kubeadm join [your unique string from the kubeadm init command]
@@ -75,13 +83,6 @@ kubectl get nodes
 |   |   |   |   |   |
 |   |   |   |   |   |
 
-### Tips
-
-In installation process maybe you will due to error or warning message relate to Swap.
-In some case recommendation is turn off Swap using this command 
-```
-swapoff -a 
-``` 
 ### Asign role woker (Run on Master node )
 ```
 kubectl label node node1 node-role.kubernetes.io/worker=worker
