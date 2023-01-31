@@ -61,6 +61,9 @@ kubectl apply -f https://docs.projectcalico.org/v3.14/manifests/calico.yaml
 ```
 sudo kubeadm join [your unique string from the kubeadm init command]
 ```
+```
+sudo kubeadm token create --print-join-command
+```
 ### Verify the worker nodes have joined the cluster successfully:
 ```
 kubectl get nodes
@@ -79,4 +82,8 @@ In some case recommendation is turn off Swap using this command
 ```
 swapoff -a 
 ``` 
+### Asign role woker (Run on Master node )
+```
+kubectl label node node1 node-role.kubernetes.io/worker=worker
+```
 
