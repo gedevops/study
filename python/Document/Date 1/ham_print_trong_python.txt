@@ -1,0 +1,19 @@
+Link Document: https://toidicode.com/ham-print-trong-python-343.html
+
+Hàm Print trong Python
+    - Hàm print trong Python có tác dụng hiển thị dữ diệu ra màn hình khi chương trình thực thi
+    - VD: Hiển thị ra màn hình dòng chữ "Lê Thành Vũ"
+        + print(content)
+        + print("Lê Thành Vũ")
+    - VD: Hiển thị 2 khối nội dung trên 1 lần print
+        + print("Hello world!", " Created by vult")
+
+
+Thay đổi ngắt dòng print
+    - Mặc định thì mỗi lần chúng ta print dữ liệu thì nó sẽ tự ngắt dòng cho dòng tiếp theo
+    - Vậy ở đây, khi chúng ta không muốn nó tự động ngắt dòng mỗi khi kết thúc print nữa thì mọi người sử dụng keyword end thêm vào param cuối cùng của hàm print với cú pháp như sau:
+    print(content, end = "charset")  //Trong đó là charset là ký tự mà chúng ta muốn thực hiện khi kết thúc hàm print.
+    - VD: 
+        + print("Toidicode.com", end = " - ")
+        + print("Hoc lap trinh online")
+    Kết quả lúc này sẽ được: Toidicode.com - Hoc lap trinh online
